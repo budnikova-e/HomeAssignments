@@ -14,7 +14,7 @@ class Transformer
 public:
     Transformer(int level, int strength, int range, int fuel, int ammo,
                 Weapon* weapon, Ally* ally);
-    Transformer() {}
+    Transformer();
 
     virtual ~Transformer();
 

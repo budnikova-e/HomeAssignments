@@ -7,7 +7,7 @@ Transformer::Transformer(int level, int strength, int range, int fuel, int ammo,
                          Weapon* weapon, Ally* ally): _level(level), _strength(strength), _range(range), _fuel(fuel), _ammo(ammo),
     _weapon(weapon), _ally(ally) {}
 Transformer::~Transformer() {}
-
+Transformer::Transformer() {}
 
 int Transformer::getLevel()
 {
