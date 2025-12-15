@@ -10,13 +10,14 @@ Assignment 3 */
 class Dinobot : public Autobot {
 public:
     Dinobot(int level, int strength, int range, int fuel, int ammo,
-        Weapon* weapon , Ally* ally, std::string& vehicleMode, std::string& motto,
-        std::string& dinoType);
+        Weapon* weapon , Ally* ally, std::string vehicleMode, std::string team,
+        std::string dinoType);
+    Dinobot();
     ~Dinobot();
 
     std::string getDinoType();
 
-    void setDinoType(std::string& type);
+    void setDinoType(std::string type);
 
     bool stomp();
     bool transform();

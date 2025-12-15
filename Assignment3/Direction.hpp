@@ -5,6 +5,7 @@ Hello_world task */
 #define DIRECTION_H
 
 class Direction {
+public:
     Direction(int valueX, int valueY);
     ~Direction();
 

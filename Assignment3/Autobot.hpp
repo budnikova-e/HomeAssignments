@@ -10,22 +10,23 @@ Assignment 3 */
 class Autobot : public Transformer {
 public:
     Autobot(int level, int strength, int range, int fuel, int ammo,
-            Weapon *weapon, Ally* ally, std::string& vehicleMode, 
-            std::string& motto);
+            Weapon *weapon, Ally* ally, std::string vehicleMode, 
+            std::string team);
+    Autobot();
     virtual ~Autobot();
 
     std::string getVehicleMode();
-    std::string getMotto();
+    std::string getTeam();
 
-    void setVehicleMode(std::string& mode);
-    void setMotto(std::string& motto);
+    void setVehicleMode(std::string mode);
+    void setTeam(std::string team);
 
     bool assist();
     bool transform();
 
 protected:
     std::string _vehicleMode;
-    std::string _motto;
+    std::string _team;
 };
 
 #endif

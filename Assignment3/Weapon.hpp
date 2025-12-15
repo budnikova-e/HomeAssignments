@@ -8,13 +8,13 @@ Assignment 3 */
 
 class Weapon {
 public:
-    Weapon(std::string& name, int damage);
+    Weapon(std::string name, int damage);
     ~Weapon();
 
     std::string getName();
     int getDamage();
 
-    void setName(std::string& newName);
+    void setName(std::string newName);
     void setDamage(int newDamage);
 
 private:

@@ -4,16 +4,17 @@ Assignment 3 */
 #include "Autobot.hpp"
 
 Autobot::Autobot(int level, int strength, int range, int fuel, int ammo,
-            Weapon* weapon, Ally* ally, std::string& vehicleMode, 
-            std::string& motto): Transformer(level, strength, range, fuel, ammo, weapon, ally),
-      _vehicleMode(vehicleMode), _motto(motto) {}
+            Weapon* weapon, Ally* ally, std::string vehicleMode, 
+            std::string team): Transformer(level, strength, range, fuel, ammo, weapon, ally),
+      _vehicleMode(vehicleMode), _team(team) {}
+Autobot::Autobot(){}
 Autobot::~Autobot(){}
 
 std::string Autobot::getVehicleMode() { return _vehicleMode; }
-std::string Autobot::getMotto() { return _motto; }
+std::string Autobot::getTeam() { return _team; }
 
-void Autobot::setVehicleMode(std::string& mode) { _vehicleMode = mode; }
-void Autobot::setMotto(std::string& motto) { _motto = motto; }
+void Autobot::setVehicleMode(std::string mode) { _vehicleMode = mode; }
+void Autobot::setTeam(std::string motto) { _team = motto; }
 
 bool Autobot::assist() {
     return true; 

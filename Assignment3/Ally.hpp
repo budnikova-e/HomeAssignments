@@ -8,14 +8,14 @@ Assignment 3 */
 
 class Ally {
 public:
-    Ally(std::string& name, std::string& type);
+    Ally(std::string name, std::string type);
     ~Ally();
 
     std::string getName();
     std::string getType();
 
-    void setName(std::string& newName);
-    void setType(std::string& newType);
+    void setName(std::string newName);
+    void setType(std::string newType);
 
 private:
     std::string _name;
