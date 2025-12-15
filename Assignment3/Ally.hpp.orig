@@ -1,26 +1,25 @@
 /* Ekaterina Budnikova  st107207@student.spbu.ru
 Assignment 3 */
 
-#ifndef WEAPON_HPP
-#define WEAPON_HPP
+#ifndef ALLY_HPP
+#define ALLY_HPP
 
 #include <string>
 
-class Weapon
-{
+class Ally {
 public:
-    Weapon(std::string name, int damage);
-    ~Weapon();
+    Ally(std::string name, std::string type);
+    ~Ally();
 
     std::string getName();
-    int getDamage();
+    std::string getType();
 
     void setName(std::string newName);
-    void setDamage(int newDamage);
+    void setType(std::string newType);
 
 private:
     std::string _name;
-    int _damage;
+    std::string _type;
 };
 
 #endif

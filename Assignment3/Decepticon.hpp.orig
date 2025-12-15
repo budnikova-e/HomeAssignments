@@ -6,8 +6,7 @@ Hello_world task */
 
 #include "Transformer.hpp"
 
-class Decepticon: public Transformer
-{
+class Decepticon: public Transformer{
 public:
     Decepticon(int level, int strength, int range, int fuel, int ammo,
                Weapon* weapon, Ally* ally, std::string altMode, int terrorFactor);

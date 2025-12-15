@@ -6,7 +6,8 @@ Assignment 3 */
 
 #include <string>
 
-class Ally {
+class Ally
+{
 public:
     Ally(std::string name, std::string type);
     ~Ally();

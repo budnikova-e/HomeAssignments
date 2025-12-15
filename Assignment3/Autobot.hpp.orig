@@ -7,11 +7,10 @@ Assignment 3 */
 #include "Transformer.hpp"
 #include <string>
 
-class Autobot : public Transformer
-{
+class Autobot : public Transformer {
 public:
     Autobot(int level, int strength, int range, int fuel, int ammo,
-            Weapon *weapon, Ally* ally, std::string vehicleMode,
+            Weapon *weapon, Ally* ally, std::string vehicleMode, 
             std::string team);
     Autobot();
     virtual ~Autobot();

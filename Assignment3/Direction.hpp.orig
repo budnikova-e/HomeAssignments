@@ -4,8 +4,7 @@ Hello_world task */
 #ifndef DIRECTION_H
 #define DIRECTION_H
 
-class Direction
-{
+class Direction {
 public:
     Direction(int valueX, int valueY);
     ~Direction();
@@ -19,7 +18,7 @@ public:
 private:
     int _valueX;
     int _valueY;
-
+    
 };
 
 #endif
